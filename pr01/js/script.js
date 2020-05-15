@@ -32,3 +32,45 @@ let a = 10;
  }
 firstFunction("GOOD BYE");
 
+(function () {
+  alert("Self invoke function");
+}());
+
+let calculator = (function ()
+{
+let mem = {num : 0};
+  return result = {
+    sum: function (x) {
+      return mem.num += x;
+    },
+    subtract: function (x) {
+      return mem.num -= x;
+    },
+    clr:function () {
+      mem.num = 0;
+    }
+
+  }}());
+
+let calcTest = function () {
+  let numbr = 0;
+  return result = {
+    sum: function (x) {
+      return numbr += x;
+    },
+    subtract: function (x) {
+      return numbr - +x;
+    },
+    clr: function () {
+      numbr = 0;
+    }
+  }
+};
+
+console.log(calculator.sum(10));
+console.log(calculator.sum(30));
+calculator.clr();
+console.log(calculator.subtract(15));
+
+console.log(calcTest().sum(5));
+console.log(calcTest().subtract(1));
