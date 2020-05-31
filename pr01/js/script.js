@@ -111,4 +111,84 @@ for (let key in realMan){
   console.log(key + ":" + realMan[key]);
 }
 
-let creator = (uName, uAge)=> {return{name:uName, age:uAge, displayInfo:()=>console.log}};
+let creator = (uName, uAge)=> {return{name:uName, age:uAge, displayInfo:()=>console.log("User name :" + uName + "; User age :" + uAge)}};
+creator("Mikel", 18).displayInfo();
+
+function printUserToPage (user){
+  document.write("<p> User name : "+ user.name + "; User Age : " + user.age + "</p>");
+}
+
+let user1 = creator("USER 1", 10);
+let user2 = creator ("USER2", 15);
+printUserToPage(user1);
+printUserToPage(user2);
+printUserToPage(creator("USER3", 18));
+user1.displayInfo();
+user2.displayInfo();
+
+function Buyer (name, age, money){
+  this.name = name;
+  this.age = age;
+  this.money = money;
+  let _credit = 0;
+  this.showInfo = function(){
+    document.write("<p>" + this.name + ":" + this.age + ":" + this.money);
+  };
+  this.showReachest = function(array){
+    let maxMoney = 0;
+    for (let buyer of array){
+      if (buyer.money>maxMoney){maxMoney = buyer.money};
+    }
+    document.write("<p> Reachest buyer has : " + maxMoney + " money; </p>");
+  }
+  this.getCredit = function(){
+    console.log(_credit);
+    return _credit;
+  }
+
+  this.setCredit = function(credit){
+    if (typeof credit == "number" && credit >=0)
+    {
+      _credit = credit;
+      console.log("was installed " + credit + " credit.")
+    } else {
+      console.log("unacceptable value");
+    }
+  }
+}
+
+let buyer1 = new Buyer("Buyer_1", 20, 350);
+buyer1.showInfo();
+
+let buyer_array = [buyer1, new Buyer("Buyer_2", 45, 135), new Buyer("Buyer_3", 46, 600)];
+buyer1["showReachest"](buyer_array);
+
+Buyer.prototype.payed = function (price) {
+  this.money -= price;
+  document.write("<p> User " + this.name + " payed " + price + " money </p>");
+}
+buyer_array[2].payed(550);
+buyer_array[2].showReachest(buyer_array);
+let buyer2 = buyer_array[2];
+buyer2.getCredit();
+buyer2.setCredit(-100);
+buyer2.setCredit(1000);
+buyer2.getCredit();
+function getRandom(maxValue){
+  return Math.floor(Math.random()*maxValue);
+}
+function delay(func, timeout){
+  let now = new Date().getTime();
+  while (new Date().getTime() < now+timeout){
+
+  }
+  func();
+}
+let newwindow = window.open("https://google.com", "Google", 'width=400, height=400, resizable=yes');
+let delayedFunc = function (){newwindow.moveTo(getRandom(200), getRandom(200));
+console.log("windows moved")};
+for (let i = 0; i <10; i++) {
+delay(delayedFunc, 1000);
+}
+
+
