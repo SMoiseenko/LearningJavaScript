@@ -1,5 +1,7 @@
+let p_id = 1;
+let p_created = 100;
 let firstFunction = function (text = "HELLO") {
-  document.write("<p style='color: crimson'>" + "My First Function " + text + "</p>");
+  document.getElementById("p" + (p_id++) + "_id").innerText="My First Function" + text;
 };
 
 /*
@@ -20,7 +22,11 @@ let a = 10;
  console.log(...myArray);
 
  let user = [["Tom", 25, false], ['Bill', 18, true], ["Andrey", 42, false]];
- document.writeln(...user.toString());
+let userArrayString = "";
+for (let u of user){
+  userArrayString += u.toString() + " // ";
+}
+ document.getElementById("p" + (p_id++) + "_id").innerText=userArrayString;
  console.log(user[1][1]);
  user[1][2] = false;
  console.log(user[1]);
@@ -29,8 +35,9 @@ let a = 10;
  }
  firstFunction();
 
+
  for(let sUser of user){
-   document.write("<p>" + sUser+ "</p>");
+   document.getElementById("p" + (p_id++) + "_id").innerText = sUser.toString();
  }
 firstFunction("GOOD BYE");
 
@@ -82,16 +89,28 @@ func1(1, 4);
 func1();
 func1(0, 3);
 
+let insertTextAfterNode = function (text, node) {
+
+    let p = document.createElement("p");
+    p.id = (p_created++).toString();
+    p.innerText = text;
+    document.getElementById(node).before(p);
+
+};
+
 let userfunc = (uname, uage) =>({name: uname, age: uage});
 let vasya = userfunc("Vasya", 33);
-document.write(vasya.name + ' ;' + vasya.age);
-var dateNow = new Date();
-document.write("<p>" + dateNow.getHours() + ':'+dateNow.getMinutes()+":"+ dateNow.getSeconds());
+document.getElementById("p" + (p_id++) + "_id").innerText = vasya.name + ' ;' + vasya.age;
+let dateNow = new Date();
+document.getElementById("p" + (p_id++) + "_id").innerText = dateNow.getHours() + ':'+dateNow.getMinutes()+":"+ dateNow.getSeconds();
 
 let realMan = { name:"REAL_MAN",
                 age:50,
                 "full name" : "THE_REAL_MAN",
-                display() {document.write("<p>"+ this.name + " ," + this.age + ";")},
+                display: function() {
+                  insertTextAfterNode(this.name + " ," + this.age + ";", "h2_id");
+                },
+
                 "full display" : function() {console.log(this["full name"])}};
 realMan.display();
 realMan["full display"]();
@@ -115,7 +134,7 @@ let creator = (uName, uAge)=> {return{name:uName, age:uAge, displayInfo:()=>cons
 creator("Mikel", 18).displayInfo();
 
 function printUserToPage (user){
-  document.write("<p> User name : "+ user.name + "; User Age : " + user.age + "</p>");
+  insertTextAfterNode("User name : "+ user.name + "; User Age : " + user.age, "h2_id");
 }
 
 let user1 = creator("USER 1", 10);
@@ -132,19 +151,20 @@ function Buyer (name, age, money){
   this.money = money;
   let _credit = 0;
   this.showInfo = function(){
-    document.write("<p>" + this.name + ":" + this.age + ":" + this.money);
-  };
+    insertTextAfterNode(this.name + ":" + this.age + ":" + this.money, "h2_id");
+    };
   this.showReachest = function(array){
     let maxMoney = 0;
-    for (let buyer of array){
-      if (buyer.money>maxMoney){maxMoney = buyer.money};
-    }
-    document.write("<p> Reachest buyer has : " + maxMoney + " money; </p>");
-  }
+    for (let buyer of array) {
+      if (buyer.money > maxMoney) {
+        maxMoney = buyer.money
+      }
+    insertTextAfterNode("Reachest buyer has : " + maxMoney + " money;", "h2_id");
+   }};
   this.getCredit = function(){
     console.log(_credit);
     return _credit;
-  }
+  };
 
   this.setCredit = function(credit){
     if (typeof credit == "number" && credit >=0)
@@ -165,8 +185,9 @@ buyer1["showReachest"](buyer_array);
 
 Buyer.prototype.payed = function (price) {
   this.money -= price;
-  document.write("<p> User " + this.name + " payed " + price + " money </p>");
-}
+  insertTextAfterNode("User " + this.name + " payed " + price + " money ",
+      "h2_id");
+};
 buyer_array[2].payed(550);
 buyer_array[2].showReachest(buyer_array);
 let buyer2 = buyer_array[2];
@@ -184,11 +205,7 @@ function delay(func, timeout){
   }
   func();
 }
-let newwindow = window.open("https://google.com", "Google", 'width=400, height=400, resizable=yes');
-let delayedFunc = function (){newwindow.moveTo(getRandom(200), getRandom(200));
-console.log("windows moved")};
-for (let i = 0; i <10; i++) {
-delay(delayedFunc, 1000);
-}
+
+document.getElementById("p_last_id").innerText="....ADDED BY JAVASCRIPT";
 
 
