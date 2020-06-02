@@ -1,3 +1,13 @@
+body {
+  background-color: darkgrey;
+}
+p {text-align: center;
+}
+h2{text-align: center}
+img{
+  display: block;
+}
+
 #p1_id{
   color: rebeccapurple;
 }
