@@ -1,5 +1,8 @@
+"use strict";
+
 let p_id = 1;
 let p_created = 100;
+let pic_id = 1000;
 let firstFunction = function (text = "HELLO") {
   document.getElementById("p" + (p_id++) + "_id").innerText="My First Function" + text;
 };
@@ -48,7 +51,7 @@ firstFunction("GOOD BYE");
 let calculator = (function ()
 {
 let mem = {num : 0};
-  return result = {
+  return {
     sum: function (x) {
       return mem.num += x;
     },
@@ -63,7 +66,7 @@ let mem = {num : 0};
 
 let calcTest = function () {
   let numbr = 0;
-  return result = {
+  return {
     sum: function (x) {
       return numbr += x;
     },
@@ -207,5 +210,85 @@ function delay(func, timeout){
 }
 
 document.getElementById("p_last_id").innerText="....ADDED BY JAVASCRIPT";
+let greet = new Function('','insertTextAfterNode("Здрасте", "h2_id");');
+function newGreet(){
+  insertTextAfterNode("И снова, Здрасте", "h2_id");
+}
+greet();
+console.log(newGreet.name);
+newGreet.call(this);
+
+console.log(typeof func1());
+console.log("----FIN----");
+
+function Animal(name, population) {
+this.name = name;
+this.population = population;
+this.makeSound = function () {
+  insertTextAfterNode("I am undefined animal, cant make sound", "h2_id");
+}
+}
+
+Animal.prototype.sound = "NO SOUND";
+
+function Dog(name, population, sound){
+  Animal.call(this, name, population);
+  this.sound = sound;
+  this.makeSound = function () {insertTextAfterNode("I am a " + name + ". My population are " + population + "; I say: " + sound + ".", "h2_id")
+
+  }
+}
+
+Dog.prototype = Object.create(Animal.prototype);
+
+let goodDog = new Dog("Pitbull", 125000, "Gav-gaV");
+goodDog.makeSound();
+let animalUndef = new Animal("Undef", 0);
+animalUndef.makeSound();
+
+let myRequest = new XMLHttpRequest();
+myRequest.open("GET", "https://reqres.in/api/users?page=2", false);
+myRequest.send();
+let myRequestStatus = myRequest.status;
+if (myRequestStatus === 200) {
+  let myResponse = JSON.parse(myRequest.responseText);
+  let myData = myResponse.data;
+  for (let i = 0; i < myData.length; i++) {
+    let {id: uId, email: uEmail, first_name : uFirstName, last_name : uLastName} = myData[i];
+    insertTextAfterNode("id : " + uId + "; email : " + uEmail + "; first_name : " + uFirstName + "; last_name : " + uLastName, "h2_id");
+  }
+}
+
+let [, {money: b2Money}] = buyer_array;
+insertTextAfterNode(b2Money, "h2_id");
+
+for (let i = 0; i<10; i++){
+  insertTextAfterNode(Math.random(), "h2_id");
+}
+
+let daysArray = ["Mon", "Wed", "Fri"];
+let changedDaysArray = daysArray.slice();
+changedDaysArray[2] = "Sun";
+console.log(daysArray);
+console.log(changedDaysArray);
+daysArray.unshift("Sat");
+daysArray.splice(-1);
+
+function isNexTDayInArray(array, day){
+  return array.some(x=>{return x=== day;})
+}
+
+
+console.log(daysArray);
+console.log(isNexTDayInArray(daysArray, "Mon"));
+
+insertTextAfterNode("Aloha ".repeat(4), "h2_id");
+
+for (let buyer of buyer_array) {
+
+  let stringTemplate = `His name is ${buyer.name} and his age is ${buyer.age}`;
+  insertTextAfterNode(stringTemplate, "h2_id");
+}
+
 
 
