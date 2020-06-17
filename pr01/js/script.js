@@ -290,5 +290,17 @@ for (let buyer of buyer_array) {
   insertTextAfterNode(stringTemplate, "h2_id");
 }
 
+let regExp = /Four/g;
+insertTextAfterNode("RegExp result of testing " + myArray[4] + "on regexp " + regExp + " is " + regExp.test(myArray[4]), "h2_id");
+
+let parseThisString = "One Two Three Four Five Six Seven";
+insertTextAfterNode(parseThisString.replace(regExp, "TEN"), "h2_id");
 
 
+let nameRegExp = /[a-z]{4,6}/g;
+let anonymousName = "ANONYMOUS";
+let enteredName = prompt("Enter your name", `${anonymousName}`);
+if (nameRegExp.test(enteredName)){
+  alert(`Hello ${enteredName}`);
+}
+else confirm(`You will continue as ${anonymousName}`);
