@@ -1,13 +1,24 @@
 body {
   background-color: darkgrey;
 }
-p {text-align: center;
+
+p {
+  text-align: center;
 }
-h2{text-align: center}
-img{
+
+h2 {
+  text-align: center
+}
+
+h3 {
+  text-align: center;
+  color: darkgreen
+}
+
+img {
   display: block;
 }
 
-#p1_id{
+#p1_id {
   color: rebeccapurple;
 }
