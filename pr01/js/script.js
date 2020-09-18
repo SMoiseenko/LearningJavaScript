@@ -389,7 +389,8 @@ let qtyOfPElem = document.getElementsByTagName('p');
 insertTextAfterNode("We have " + qtyOfPElem.length + " of <p> elements.",
     "h2_id");
 
-setTimeout(() => {clearInterval(clockIntervalID);document.getElementById("main_div").innerHTML = ''}, 10000);
+let htmlforlastbuttom = '<div class="row d-flex justify-content-center"><a href="pg1.html" class="btn btn-elegant">PAGE 1</a></div>';
+setTimeout(() => {clearInterval(clockIntervalID);document.getElementById("main_div").innerHTML = htmlforlastbuttom}, 10000);
 
 
 
