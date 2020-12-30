@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index Page</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/mdb.lite.min.css"/>
+
+</head>
+<body>
+<div id="mainDiv">
+  <div id="divForm1">
+    <form id="form1">
+      <p class="h3"><textarea placeholder="This will be your text" cols="30" rows="7" name="textarea"></textarea></p>
+      <p class="h3"><label for="form1Select">Choose yes or not</label>
+        <select autofocus id=form1Select>
+          <option>Yes</option>
+          <option>NOT</option>
+        </select></p>
+      <p class="h3"><label for="login">Login</label>
+        <input id="login" type="text" name="login"/></p>
+      <p class="h3"><label for="password">Password</label>
+        <input id="password" type="password" name="password"/></p>
+      <p class="h3">
+        <label for="inputNumber">NumberField</label>
+        <input type="number" list="dtForForm" id="inputNumber" min="1" max="100" step="1"
+               name="numField"/>
+      </p>
+      <fieldset class="bordered centertext">
+        <legend class="h2" id="rangeValue">RangeInput</legend>
+        <p class="h3">
+          <label for="rangeInput"></label>
+          -50<input type="range" id="rangeInput" min="-50" max="50" step="0.5" value="0"
+                    name="polzunok" onchange="showValue(this.value)"/>50
+        </p>
+      </fieldset>
+      <fieldset class="bordered centertext">
+        <legend class="h2">Choose your language</legend>
+        <p class="h3">
+          <label for="chkEnglish">English</label>
+          <input id="chkEnglish" type="checkbox" checked name="ENGLISH"/>
+          <label for="chkRusian">Russian</label>
+          <input id=chkRusian type="checkbox" name="RUSSIAN"/>
+          <label for="chkChinas">China's</label>
+          <input id="chkChinas" type="checkbox" name="CHINAS"/>
+        </p></fieldset>
+      <fieldset class="bordered centertext">
+        <legend class="h2">Choose your sex</legend>
+        <p class="h3">
+          <label for="sexM">Male</label>
+          <input type="radio" checked id="sexM" value="MALE" name="SEX"/>
+          <label for="sexF">Female</label>
+          <input type="radio" id="sexF"  value="FEMALE" name="SEX"/>
+        </p></fieldset>
+      <fieldset class="bordered centertext">
+        <legend class="h2">Color PickUP</legend>
+        <label for="formColor"></label>
+        <input type="color" id="formColor" name="COLOR"/>
+      </fieldset>
+      <fieldset class="bordered centertext">
+        <legend class="h2">Date</legend>
+        <label for="dataInput"></label>
+        <input type="date" id="dataInput" name="DATE">
+      </fieldset>
+
+      <p class="h3">
+        <button class="btn btn-green" type="submit" formmethod="post" formaction="index.html">Send
+        </button>
+        <button class="btn btn-red" type="reset">Reset</button>
+      </p>
+    </form>
+    <datalist id="dtForForm">
+      <option value="50"></option>
+      <option value="90"></option>
+    </datalist>
+  </div>
+
+</div>
+<script type="text/javascript">
+  function showValue(val) {
+    document.getElementById("rangeValue").innerText = 'RangeInput:'+val;
+  }
+</script>
+</body>
+</html>

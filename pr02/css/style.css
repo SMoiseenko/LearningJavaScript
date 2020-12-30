@@ -1,0 +1,31 @@
+body {
+  background-color: darkgrey;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center
+}
+
+h3 {
+  text-align: center;
+  color: darkgreen
+}
+
+img {
+  display: block;
+}
+
+#p1_id {
+  color: rebeccapurple;
+}
+.bordered{
+  margin-top: 10px;
+  border-style: solid;
+}
+.centertext{
+  text-align: center;
+}
