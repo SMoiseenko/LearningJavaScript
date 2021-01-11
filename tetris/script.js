@@ -54,39 +54,38 @@ function fixTetro(){
 			}
 		} 
 	}
-	while (checkFullLine()){
+	checkFullLine()
 
-	}
 	getNewTetro();
 }
 
 function checkFullLine(){
-	let lineValue = 0;
-	let flagFullLine = false;
-	let result = false;
+	let flagFullLine = true;
 	for (let y = playField.length-1; y >= 0; y--){
-		lineValue = 0;
+		flagFullLine = true;
 		for (let x = 0; x <playField[y].length; x++) {
-			if(flagFullLine){
-				playField[y+1][x] = playField[y][x];
-
-			} else {
-				if (playField[y][x]===2){
-					lineValue++;
-				}
-				if(lineValue===10){
-					flagFullLine = result = true;
-					score++;
-					console.log('score:'+score);
-				}
+			if (playField[y][x]!==2){
+				flagFullLine=false;
+				break;
 			}
 		}
+		if(flagFullLine){
+			for (let y1 = y; y1 > 0; y1--){
+			for (let x = 0; x <playField[y].length; x++) {
+				 playField[y1][x]=playField[y1-1][x];
+			}
+		}
+		y++;
+			score++;
+			console.log('score:'+score);
+		}
 	}
-	return result;
 }
 
 function getNewTetro(){
-	let i = getRandomIntInclusive(1,7);
+	playField[0] = [0,0,0,0,1,1,0,0,0,0];
+		playField[1] = [0,0,0,0,1,1,0,0,0,0];
+	/*let i = getrondomIntInclusive(1,7);
 	switch(i){
 		case(1):
 		playField[0] = [0,0,0,1,1,1,1,0,0,0];
@@ -115,17 +114,17 @@ function getNewTetro(){
 		playField[0] = [0,0,0,0,1,0,0,0,0,0];
 		playField[1] = [0,0,0,1,1,1,0,0,0,0];
 		break;			
-	}
+	}*/
 }
 
-function getRandomIntInclusive(min, max) {
+function getrondomIntInclusive(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 //move down
 function moveTetroDown(){
-	if(canTetraMoveDown()){
+	if(canTetroMoveDown()){
 		for (let y = playField.length-1; y >= 0; y--){
 			for (let x = 0; x <playField[y].length; x++) {
 				if (playField[y][x] === 1){
@@ -139,7 +138,7 @@ function moveTetroDown(){
 	}
 }
 
-function canTetraMoveDown(){
+function canTetroMoveDown(){
 	for (let y = playField.length-1; y >= 0; y--){
 		for (let x = 0; x <playField[y].length; x++) {
 			if (playField[y][x] === 1){
@@ -152,7 +151,7 @@ function canTetraMoveDown(){
 }
 //move left
 function moveTetroLeft(){
-	if(canTetraMoveLeft()){
+	if(canTetroMoveLeft()){
 		for (let y = playField.length-1; y >= 0; y--){
 			for (let x = 0; x <playField[y].length; x++) {
 				if (playField[y][x] === 1){
@@ -164,7 +163,7 @@ function moveTetroLeft(){
 	}
 }
 
-function canTetraMoveLeft(){
+function canTetroMoveLeft(){
 	for (let y = playField.length-1; y >= 0; y--){
 		for (let x = 0; x <playField[y].length; x++) {
 			if (playField[y][x] === 1){
@@ -177,7 +176,7 @@ function canTetraMoveLeft(){
 }
 //move right
 function moveTetroRight(){
-	if(canTetraMoveRight()){
+	if(canTetroMoveRight()){
 		for (let y = playField.length-1; y >= 0; y--){
 			for (let x = playField[y].length-1; x >=0; x--) {
 				if (playField[y][x] === 1){
@@ -189,7 +188,7 @@ function moveTetroRight(){
 	}
 }
 
-function canTetraMoveRight(){
+function canTetroMoveRight(){
 	for (let y = playField.length-1; y >= 0; y--){
 		for (let x = 0; x <playField[y].length; x++) {
 			if (playField[y][x] === 1){
@@ -200,11 +199,25 @@ function canTetraMoveRight(){
 		}
 	} return true;
 }
+//fall tetro
+function fallTetroDown(){
+	while(canTetroMoveDown()){
+		moveTetroDown();
+		draw();
+	}
+}
+
+function rotateTetro(){
+console.log('function not realized yet');
+}
 
 document.onkeydown = function(e){
 	switch(e.keyCode){
 		case(37):
 		moveTetroLeft();
+		break;
+		case(38):
+		rotateTetro();
 		break;
 		case(39):
 		moveTetroRight();
@@ -212,7 +225,11 @@ document.onkeydown = function(e){
 		case(40):
 		moveTetroDown()
 		break;
+		case(32):
+		fallTetroDown();
+		break;
 	}
+	draw();
 }
 
 function startGame(){
@@ -220,5 +237,6 @@ function startGame(){
 	moveTetroDown();
 	setTimeout(startGame, gameSpeed);	
 }
+//begin is here
 getNewTetro();
 startGame();
