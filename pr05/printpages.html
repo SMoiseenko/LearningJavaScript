@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background: #b0b0b5">
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="from">FROM</label>
+				<input id ="from" class="form-control" type="number" name="from" />
+			</div>
+			<div class="form-group">
+				<label for="till">TILL</label>
+				<input id ="till" class="form-control" type="number" name="to"/>
+			</div>
+			<div class="form-group">
+				<input id="butt" type="button" class="btn btn-success" value="Do Job"/>
+			</div>
+		</form>
+	</div>
+	<div class="container" id = "output">
+		
+	</div>
+	<script type="text/javascript">
+
+		butt.onclick = function (e){
+
+			let firstPage = parseInt(document.getElementById('from').value);
+			let lastPage = parseInt(document.getElementById('till').value);
+			let text = '';
+			if (firstPage === 0 && lastPage === 0){
+				alert('Enter first and last pages!!!');
+			} else{
+				text = '<p class="font-weight-bold"> Pages for print</p><p class="font-weight-normal">';
+				for (let i = firstPage, k = 1;i<lastPage;i=i+2, k++){
+					text += (i++) + ', ' + (i++) + ((k%10!=0)?', ':'</p><p class="font-weight-normal">');
+				}
+				text = text.slice(0,-2) + '</p><p class="font-weight-normal">';
+				for (let i = firstPage +2, k = 1;i<lastPage;i=i+2, k++){
+					text += (i++) + ', ' + (i++) + ((k%10!=0)?', ':'</p><p class="font-weight-normal">');
+				}
+				text = text.slice(0,-2) + '</p>';	
+			}
+			document.getElementById('output').innerHTML = text;
+		}
+	</script>
+</body>
+</html>
