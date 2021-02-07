@@ -5,22 +5,29 @@ body{
 	margin: 0;
 	background: #000;
 }
-.main{
+.tetrisScore{
+	width: 320px;
+	height: auto;
+	margin: 10px auto 0;
+	text-align: center;
+	color:#bbbbbb;
+}
+.tetrisField{
 	width: 320px;
 	height: 620px;
-	margin: 100px auto 0;
-	border: 10px solid silver;
+	margin: 0 auto 0;
+	border: 10px solid #bbbbbb;
 	font-size: 0px;
 }
 .cell{
 	width: 30px;
 	height: 30px;
-	border: 1px solid silver;
+	border: 1px solid #bbbbbb;
 	display: inline-block;
 }
 .movingCell{
-	background: blue;
+	background: #194f92;
 }
 .fixedCell{
-	background: green;
+	background: #699e3c;
 }
