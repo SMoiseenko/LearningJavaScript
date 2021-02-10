@@ -11,6 +11,7 @@ body{
 	margin: 10px auto 0;
 	text-align: center;
 	color:#bbbbbb;
+	font-size: small;
 }
 .tetrisField{
 	width: 320px;

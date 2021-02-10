@@ -1,15 +1,21 @@
+const enableDebug = true;
 const tetrisField = document.querySelector(".tetrisField");
 const tetrisScore = document.querySelector(".tetrisScore");
 const cookieScore = 'maxScore';
+const levelUpScore = 3000;
+const changeSpeedMs = 35;
+const initSpeedMs = 800;
 let maxScore = 0;
-let scoreGradation = [0,100,300,700,1500];
+let scoreGradation = [0, 100, 300, 700, 1500];
 let gameSpeed = 800;
 let score = 0;
+let currentLevel = 0;
 const activeTetro = {
 	shape: 0,
 	x: 0,
 	y: 0
 };
+const debugInfo = {};
 const allFigures = 'OIZSLJT';
 const figures = {
 	O: [
@@ -73,7 +79,7 @@ const playField = [
 ];
 //
 function draw() {
-	let tetrisScoreInnerHTML = '<h2>You score is : ' + score + '</h2>' + '<h2>Max score is : ' + maxScore + '</h2>';
+	let tetrisScoreInnerHTML = '<h2>Score is : ' + ('000000' + score).slice(-6) + '</h2>' + '<h2>Max score : ' + ('000000' + maxScore).slice(-6) + '</h2>' + '<h2>Level : ' + currentLevel  + '</h2>';
 	let tetrisFieldInnerHTML = '';
 
 	for (let y = 0; y < playField.length; y++) {
@@ -93,6 +99,19 @@ function draw() {
 	}
 	tetrisField.innerHTML = tetrisFieldInnerHTML;
 	tetrisScore.innerHTML = tetrisScoreInnerHTML;
+	printDebugInfo(enableDebug);
+
+}
+function printDebugInfo(predicate) {
+	if (predicate) {
+		debugInfo.Score = score;
+		debugInfo.MaxScore = maxScore;
+		debugInfo.MaxScoreInCookie = getCookie(cookieScore);
+		debugInfo.Level = currentLevel;
+		debugInfo.GameSpeed = gameSpeed;
+
+		console.log(debugInfo);
+	}
 }
 //
 function removePrevActiveTetro() {
@@ -114,6 +133,10 @@ function addActiveTetro() {
 			}
 		}
 	}
+}
+function changeLevelAndSpeed() {
+	currentLevel = Math.trunc(score / levelUpScore); //800 - 1 - 100 - 18
+	gameSpeed = initSpeedMs - changeSpeedMs * currentLevel;
 }
 //
 function hasCollisions() {
@@ -165,6 +188,7 @@ function checkFullLine() {
 	}
 	score += scoreGradation[totalLines];
 	saveScore();
+	changeLevelAndSpeed();
 }
 //
 function saveScore() {
