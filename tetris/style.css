@@ -4,26 +4,44 @@
 body{
 	margin: 0;
 	background: #000;
+	font-family: system-ui;
+	color:#bbbbbb;
+}
+.customH1{
+	margin: 10px auto 10px;
+}
+.title{
+    text-align: center;
+	font-size: x-large;
+}
+.main{
+	display:flex;
+	flex-direction: row;
+    justify-content: center;
 }
 .tetrisScore{
-	width: 320px;
+	width: auto;
 	height: auto;
-	margin: 10px auto 0;
 	text-align: center;
-	color:#bbbbbb;
+	margin: 10px;
 	font-size: small;
 }
 .tetrisField{
 	width: 320px;
 	height: 620px;
-	margin: 0 auto 0;
 	border: 10px solid #bbbbbb;
 	font-size: 0px;
+}
+.nextTetro{
+	margin: 10px auto;
+	font-size: 0px;
+	height: 120px;
+
 }
 .cell{
 	width: 30px;
 	height: 30px;
-	border: 1px solid #bbbbbb;
+	border: 1px solid;
 	display: inline-block;
 }
 .movingCell{
@@ -32,3 +50,24 @@ body{
 .fixedCell{
 	background: #699e3c;
 }
+.button {
+	background-color: #699e3c;
+	border: none;
+	border-radius: 4px;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: 0px auto;
+	outline: none;
+  }
+  div#gameOver{
+font-size: 50px;
+color:#c62828;
+text-align: center;
+display:none;
+margin-top: 100px;
+width: 200px;
+  }

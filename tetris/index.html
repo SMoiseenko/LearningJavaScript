@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tetris</title>
-	<link rel="stylesheet" type="text/css" href="style.css"></link>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</link>
 
 </head>
+
 <body>
-	<div class="tetrisScore"></div>
-	<div class="tetrisField"></div>
+	<div class="title">
+		<h1 class="customH1">Tetris</h1>
+	</div>
+	<div class="main">
+		
+		<div class="tetrisField">
+
+		</div>
+		<div class="col2">
+			<div class="nextTetro" id="nextTetro"></div>
+			<div class="tetrisScore">
+			</div>
+			<div class="buttonDiv">
+				<button id="playPayse" class="button">START</button>
+			</div>
+			<div id="gameOver">GAME OVER</div>
+		</div>
+	</div>
+	
 	<script src="script.js"></script>
 </body>
+
 </html>
