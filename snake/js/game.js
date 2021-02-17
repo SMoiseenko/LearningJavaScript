@@ -40,11 +40,18 @@ function direction(event) {
     }
 }
 
+function eatTail(head, array){
+    for(let i = 0; i< array.length; i++){
+        if (head.x ==array[i].x && head.y ==array[i].y)
+        clearInterval(game);
+    }
+}
+
 function drawGame() {
     ctx.drawImage(ground, 0, 0);
     ctx.drawImage(foodImg, food.x, food.y);
     for (let i = 0; i < snake.length; i++) {
-        ctx.fillStyle = '#008000';
+        ctx.fillStyle = (i == 0) ? '#c62828' : '#008000';
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
     }
     ctx.fillStyle = 'white';
@@ -53,7 +60,21 @@ function drawGame() {
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
-    snake.pop();
+
+    if (snakeX == food.x && snakeY == food.y) {
+        score++;
+        food = {
+            x: Math.floor(Math.random() * 15 + 1) * box,
+            y: Math.floor(Math.random() * 14 + 3) * box
+        }
+    }
+    else snake.pop();
+
+    if (snakeX < 1 * box || snakeX > 15 * box 
+     || snakeY < 3 * box || snakeY > 16 * box) {
+        clearInterval(game);
+    }
+
     switch (dir) {
         case ('left'):
             snakeX -= box;
@@ -62,12 +83,20 @@ function drawGame() {
             snakeX += box;
             break;
         case 'up':
-            snakeY += box;
-            break;
-        case 'down':
             snakeY -= box;
             break;
+        case 'down':
+            snakeY += box;
+            break;
     }
+
+    let newHead = {
+        x: snakeX,
+        y: snakeY
+    }
+    eatTail(newHead, snake)
+
+    snake.unshift(newHead);
 }
 
 let game = setInterval(drawGame, 100);
