@@ -32,18 +32,19 @@
 			let firstPage = parseInt(document.getElementById('from').value);
 			let lastPage = parseInt(document.getElementById('till').value);
 			let text = '';
-			if (firstPage === 0 && lastPage === 0){
-				alert('Enter first and last pages!!!');
-			} else{
-				text = '<p class="font-weight-bold"> Pages for print</p><p class="font-weight-normal">';
-				for (let i = firstPage, k = 1;i<lastPage;i=i+2, k++){
+			if (firstPage > 0 && lastPage > 0){
+                        text = '<p class="font-weight-bold"> Pages for print</p><p class="font-weight-normal">';
+				for (let i = firstPage, k = 1;i<=lastPage;i=i+2, k++){
 					text += (i++) + ', ' + (i++) + ((k%10!=0)?', ':'</p><p class="font-weight-normal">');
 				}
 				text = text.slice(0,-2) + '</p><p class="font-weight-normal">';
-				for (let i = firstPage +2, k = 1;i<lastPage;i=i+2, k++){
+				for (let i = firstPage +2, k = 1;i<=lastPage;i=i+2, k++){
 					text += (i++) + ', ' + (i++) + ((k%10!=0)?', ':'</p><p class="font-weight-normal">');
 				}
-				text = text.slice(0,-2) + '</p>';	
+				text = text.slice(0,-2) + '</p>';
+
+			} else{
+                           alert('Enter first and last pages!!!');
 			}
 			document.getElementById('output').innerHTML = text;
 		}
