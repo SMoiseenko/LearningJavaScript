@@ -1,0 +1,37 @@
+*{
+    background-color: gray;
+    font-family: 'Open Sans';
+}
+h2{
+color: darkorchid;
+}
+.graybox{
+    width: 100px;
+    height: 100px;
+    background-color: darkslategrey;
+    margin: 10px;
+}
+#header{
+    width: 90%;
+    height: 100px;
+    border: 1px solid black;   
+}
+#content p{
+    width: 90%;
+    height: 100px;
+    background-color: burlywood;
+    border: 1px solid black;   
+}
+#footer p{
+    width: 90%;
+    height: 100px;
+    background-color: cornsilk;
+    border: 1px solid black;   
+}
+#header p {
+    font-size: 20px;
+}
+
+p.redText{
+    color: red;
+}
