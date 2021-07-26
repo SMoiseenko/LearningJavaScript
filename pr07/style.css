@@ -1,0 +1,38 @@
+div {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+div:hover:nth-child(-n+3){
+  border: 2px solid blue;
+}
+
+.header_div, .footer_div{
+  background-color: darkgray;
+}
+
+.header_div p{
+color: coral;
+font-size: 32px;
+}
+
+
+.main_div > p{
+  font-size: 20px;
+  color: blueviolet;
+}
+
+.footer_div p{
+  text-align: center;
+}
+
+tr:nth-child(odd){
+background-color: chartreuse;
+}
+tr:nth-child(even){
+background-color: cadetblue;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}

@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS3</title>
+</head>
+
+<body>
+  <div class="header_div">
+    <p>Header</p>
+  </div>
+  <div class="main_div">
+    <p>Main</p>
+    <div>
+      <p>Main inner div</p>
+    </div>
+  </div>
+  <div class="footer_div">
+    <p>Footer</p>
+  </div>
+  <div>
+    <table>
+      <caption>Cars price list</caption>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Model</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mazda 6</td>
+          <td>5000$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Audi A4</td>
+          <td>3400$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mercedes CLK350</td>
+          <td>9800$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Toyota Yaris</td>
+          <td>3200$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3"> Actual data on Jule, 26</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div>
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ol>
+  </div>
+  <div>
+    <details>
+      <summary>Months</summary>
+      <ul class="ul_inline">
+        <li>Jan</li>
+        <li>Feb</li>
+        <li>Mar</li>
+        <li>Apr</li>
+        <li>Mai</li>
+      </ul>
+    </details>
+  </div>
+  <div>
+    <form action="localhost/index.html" method="post" autocomplete="off">
+      <p>
+        <label for="login_form">Login</label>
+        <input type="text" autofocus id="login_form" name="login" />
+      </p>
+      <p>
+        <label for="years_form">Years</label>
+        <input type="number" id="years_form" name="years" />
+      </p>
+      <p>
+        <label for="qty_form">QTY</label>
+        <input type="number" list="4Form" name="qty" id="qty_form" />
+      </p>
+
+      <p><input type="submit" value="Send" /></p>
+    </form>
+    <datalist id="4Form">
+      <option value="10" />
+      <option value="20" />
+      <option value="30" />
+      <option value="40" />
+    </datalist>
+  </div>
+</body>
