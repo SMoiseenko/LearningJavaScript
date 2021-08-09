@@ -80,21 +80,38 @@
     </details>
   </div>
   <div>
-    <form action="localhost/index.html" method="post" autocomplete="off">
+    <form autocomplete="off">
       <p>
         <label for="login_form">Login</label>
         <input type="text" autofocus id="login_form" name="login" />
       </p>
       <p>
+        <label for="form_gender">Gender</label>
+        <input type="radio" name="gender" checked value="MALE" id="form_gender" />M
+        <input type="radio" name="gender" value="FEMALE" id:="form_gender"/>F
+      </p>
+      <p>
         <label for="years_form">Years</label>
-        <input type="number" id="years_form" name="years" />
+        <input type="date" id="years_form" name="years" />
       </p>
       <p>
         <label for="qty_form">QTY</label>
         <input type="number" list="4Form" name="qty" id="qty_form" />
       </p>
+      <p>
+        <select name="producer" multiple>
+          <option disabled selected>Choose producer's</option>
+          <option value="MAZDA">Mazda</option>
+          <option value="OPEL">Opel</option>
+          <option value="AUDI">Audi</option>
+          <option value="VAZ">Lada</option>
+        </select>
+      </p>
 
-      <p><input type="submit" value="Send" /></p>
+      <p>
+        <button type="submit" action="localhost/index.html" formmethod="get">Send</button>
+        <button type="reset">RESET</button>
+      </p>
     </form>
     <datalist id="4Form">
       <option value="10" />
