@@ -60,7 +60,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 6289.31
+                "SqlDatabaseSizeInMB": 6325.13
             },
             {
                 "LceMovexCode": "00301046",
@@ -112,7 +112,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 27907.69
+                "SqlDatabaseSizeInMB": 28104.06
             },
             {
                 "LceMovexCode": "00301046",
@@ -138,7 +138,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 665.25
+                "SqlDatabaseSizeInMB": 727.31
             },
             {
                 "LceMovexCode": "00301046",
@@ -152,8 +152,8 @@ var dataForTable =  [
                 "RobotAvg": 6.5,
                 "RobotSum": 379,
                 "LicenseType": "Farm",
-                "WindowsOS": "Windows Server 2008 R2 Standard",
-                "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4000.0 (X64) \n\tJun 28 2012 08:36:30 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
+                "WindowsOS": "Windows Server 2019 Standard",
+                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 17763: )\n",
                 "DownloadSpeed": null,
                 "UploadSpeed": null,
                 "NrOfCosmix": 0,
@@ -164,7 +164,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 23773.56
+                "SqlDatabaseSizeInMB": 27677.94
             },
             {
                 "LceMovexCode": "00301046",
@@ -178,8 +178,8 @@ var dataForTable =  [
                 "RobotAvg": 6.5,
                 "RobotSum": 379,
                 "LicenseType": "Farm",
-                "WindowsOS": "Windows 7 Professional",
-                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
+                "WindowsOS": "Windows 10 Pro",
+                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.3 <X64> (Build 19043: )\n",
                 "DownloadSpeed": null,
                 "UploadSpeed": null,
                 "NrOfCosmix": 0,
@@ -190,14 +190,14 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 6077.69
+                "SqlDatabaseSizeInMB": 6520.38
             },
             {
                 "LceMovexCode": "00301046",
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "p46vm-9suvx-xtykw-mc499-9c3ex",
                 "sfdcustomermovexcode": "0730000006",
-                "sfdcurrentversion": "3.12.18.1",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 6,
                 "sfdfarmname": "Jsc Lepelskij molochnokons. kombinat",
                 "sfdregion": "Belarus",
@@ -205,9 +205,9 @@ var dataForTable =  [
                 "RobotSum": 379,
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2008 R2 Standard",
-                "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4000.0 (X64) \n\tJun 28 2012 08:36:30 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
-                "DownloadSpeed": 3.15,
-                "UploadSpeed": 0.45,
+                "SqlDB": "Microsoft SQL Server 2014 (SP3-GDR) (KB4583463) - 12.0.6164.21 (X64) \n\tNov  1 2020 04:25:14 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
+                "DownloadSpeed": null,
+                "UploadSpeed": null,
                 "NrOfCosmix": null,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
@@ -216,14 +216,14 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 12679
+                "SqlDatabaseSizeInMB": 11643.38
             },
             {
                 "LceMovexCode": "00301046",
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "BZ9WC-J5ET3-FMFBG-QQHZ2-T3Z2F",
                 "sfdcustomermovexcode": "0730000006",
-                "sfdcurrentversion": "3.12.18.1",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 12,
                 "sfdfarmname": "Jsc Lepelskij molochnokons. kombinat",
                 "sfdregion": "Belarus",
@@ -232,8 +232,8 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2016 Standard",
                 "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4042.0 (X64) \n\tMar 26 2015 21:18:04 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.2 <X64> (Build 9200: )\n",
-                "DownloadSpeed": 3.15,
-                "UploadSpeed": 0.45,
+                "DownloadSpeed": null,
+                "UploadSpeed": null,
                 "NrOfCosmix": 0,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
@@ -242,7 +242,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 28898.44
+                "SqlDatabaseSizeInMB": 29197.25
             },
             {
                 "LceMovexCode": "00301046",
@@ -275,17 +275,17 @@ var dataForTable =  [
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "62W2K-M5EC4-3ZSAJ-U8LKA-DJKGC",
                 "sfdcustomermovexcode": "0730000009",
-                "sfdcurrentversion": "3.12.18.1",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 16,
                 "sfdfarmname": "SPK Progress-Vertelishki",
                 "sfdregion": "Belarus",
                 "RobotAvg": 6.5,
                 "RobotSum": 379,
                 "LicenseType": "Farm",
-                "WindowsOS": "Windows Server 2008 R2 Standard",
-                "SqlDB": "Microsoft SQL Server 2008 R2 (SP1) - 10.50.2500.0 (X64) \n\tJun 17 2011 00:54:03 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
-                "DownloadSpeed": 20.21,
-                "UploadSpeed": 5.06,
+                "WindowsOS": "Windows Server 2019 Standard",
+                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 17763: )\n",
+                "DownloadSpeed": null,
+                "UploadSpeed": null,
                 "NrOfCosmix": 0,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
@@ -294,14 +294,14 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 28102.44
+                "SqlDatabaseSizeInMB": 28104
             },
             {
                 "LceMovexCode": "00301046",
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "Z2RB9-86Y2D-X59EC-E776W-57PY2",
                 "sfdcustomermovexcode": "0730000010",
-                "sfdcurrentversion": "3.12.18.1",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 6,
                 "sfdfarmname": "SPK Nesvizhskie Ostrovki",
                 "sfdregion": "Belarus",
@@ -310,8 +310,8 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2008 R2 Standard",
                 "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4000.0 (X64) \n\tJun 28 2012 08:36:30 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
-                "DownloadSpeed": null,
-                "UploadSpeed": null,
+                "DownloadSpeed": 3.78,
+                "UploadSpeed": 0.46,
                 "NrOfCosmix": null,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
@@ -320,7 +320,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 12438.75
+                "SqlDatabaseSizeInMB": 13063.06
             },
             {
                 "LceMovexCode": "00301046",
@@ -476,7 +476,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 25688.94
+                "SqlDatabaseSizeInMB": 25660.44
             },
             {
                 "LceMovexCode": "00301046",
@@ -492,8 +492,8 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server (R) 2008 Standard",
                 "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4042.0 (Intel X86) \n\tMar 26 2015 21:49:16 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition on Windows NT 6.0 <X86> (Build 6003: Service Pack 2)\n",
-                "DownloadSpeed": 4.02,
-                "UploadSpeed": 0.48,
+                "DownloadSpeed": 3.99,
+                "UploadSpeed": 0.49,
                 "NrOfCosmix": null,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
@@ -502,7 +502,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 2379.88
+                "SqlDatabaseSizeInMB": 2600.56
             },
             {
                 "LceMovexCode": "00301046",
@@ -535,7 +535,7 @@ var dataForTable =  [
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "FC8N3-NJUDD-P97S8-XHT7B-EDLSF",
                 "sfdcustomermovexcode": "0730000018",
-                "sfdcurrentversion": "3.12.18.1",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 6,
                 "sfdfarmname": "RUP Vitebskenergo",
                 "sfdregion": "Belarus",
@@ -544,6 +544,32 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2012 R2 Standard",
                 "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4000.0 (X64) \n\tJun 28 2012 08:36:30 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.2 <X64> (Build 9200: )\n",
+                "DownloadSpeed": 4.31,
+                "UploadSpeed": 0.51,
+                "NrOfCosmix": 0,
+                "NrOfGrazeway": null,
+                "HaveVector": false,
+                "HaveQwesLD": false,
+                "HaveQwesISOLD": false,
+                "HaveQwesISOLDReceiver": false,
+                "HaveQwesLDN": false,
+                "UseInherd": false,
+                "SqlDatabaseSizeInMB": 5738.19
+            },
+            {
+                "LceMovexCode": "00301046",
+                "LceName": "Lely Center Biocom Technology Ltd.",
+                "sfdfarmlicense": "UZVX6-EVZH9-TFA9A-MXH7U-9WCX2",
+                "sfdcustomermovexcode": "0730000019",
+                "sfdcurrentversion": "3.12.32.2",
+                "sfdnrrobots": 16,
+                "sfdfarmname": "KUP Minskaya Ovoschnaya Fabrika",
+                "sfdregion": "Belarus",
+                "RobotAvg": 6.5,
+                "RobotSum": 379,
+                "LicenseType": "Farm",
+                "WindowsOS": "Windows Server 2008 R2 Standard",
+                "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4042.0 (X64) \n\tMar 26 2015 21:18:04 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
                 "DownloadSpeed": 4.16,
                 "UploadSpeed": 0.47,
                 "NrOfCosmix": 0,
@@ -554,33 +580,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 5340.25
-            },
-            {
-                "LceMovexCode": "00301046",
-                "LceName": "Lely Center Biocom Technology Ltd.",
-                "sfdfarmlicense": "UZVX6-EVZH9-TFA9A-MXH7U-9WCX2",
-                "sfdcustomermovexcode": "0730000019",
-                "sfdcurrentversion": "3.12.18.1",
-                "sfdnrrobots": 16,
-                "sfdfarmname": "KUP Minskaya Ovoschnaya Fabrika",
-                "sfdregion": "Belarus",
-                "RobotAvg": 6.5,
-                "RobotSum": 379,
-                "LicenseType": "Farm",
-                "WindowsOS": "Windows Server 2008 R2 Standard",
-                "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4042.0 (X64) \n\tMar 26 2015 21:18:04 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
-                "DownloadSpeed": 3.95,
-                "UploadSpeed": 0.45,
-                "NrOfCosmix": 0,
-                "NrOfGrazeway": null,
-                "HaveVector": false,
-                "HaveQwesLD": false,
-                "HaveQwesISOLD": false,
-                "HaveQwesISOLDReceiver": false,
-                "HaveQwesLDN": false,
-                "UseInherd": false,
-                "SqlDatabaseSizeInMB": 18895.31
+                "SqlDatabaseSizeInMB": 19375.69
             },
             {
                 "LceMovexCode": "00301046",
@@ -606,7 +606,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 16830.19
+                "SqlDatabaseSizeInMB": 17461.56
             },
             {
                 "LceMovexCode": "00301046",
@@ -665,7 +665,7 @@ var dataForTable =  [
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "D22ZA-N2GTS-DFNAB-7NWW6-B57CT",
                 "sfdcustomermovexcode": "0730000024",
-                "sfdcurrentversion": "3.12.18.1",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 11,
                 "sfdfarmname": "UP Agrokombinat Zhdanovichi",
                 "sfdregion": "Belarus",
@@ -674,9 +674,9 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2008 R2 Standard",
                 "SqlDB": "Microsoft SQL Server 2008 R2 (SP2) - 10.50.4000.0 (X64) \n\tJun 28 2012 08:36:30 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
-                "DownloadSpeed": 4.32,
-                "UploadSpeed": 1.17,
-                "NrOfCosmix": 6,
+                "DownloadSpeed": 8.09,
+                "UploadSpeed": 1.65,
+                "NrOfCosmix": 0,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
                 "HaveQwesLD": false,
@@ -684,7 +684,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 13256
+                "SqlDatabaseSizeInMB": 14561.13
             },
             {
                 "LceMovexCode": "00301046",
@@ -788,7 +788,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 11952.75
+                "SqlDatabaseSizeInMB": 12153.38
             },
             {
                 "LceMovexCode": "00301046",
@@ -840,7 +840,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": true,
-                "SqlDatabaseSizeInMB": 3831.06
+                "SqlDatabaseSizeInMB": 3685.38
             },
             {
                 "LceMovexCode": "00301046",
@@ -892,7 +892,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 22072.56
+                "SqlDatabaseSizeInMB": 22029.38
             },
             {
                 "LceMovexCode": "00301046",
@@ -918,7 +918,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 6270.56
+                "SqlDatabaseSizeInMB": 6890.75
             },
             {
                 "LceMovexCode": "00301046",
@@ -970,7 +970,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 7213.5
+                "SqlDatabaseSizeInMB": 7215.69
             },
             {
                 "LceMovexCode": "00301046",
@@ -996,7 +996,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 3540.88
+                "SqlDatabaseSizeInMB": 3539.13
             },
             {
                 "LceMovexCode": "00301046",
@@ -1048,7 +1048,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 11864.56
+                "SqlDatabaseSizeInMB": 11901.25
             },
             {
                 "LceMovexCode": "00301046",
@@ -1062,8 +1062,8 @@ var dataForTable =  [
                 "RobotAvg": 6.5,
                 "RobotSum": 379,
                 "LicenseType": "Farm",
-                "WindowsOS": "Windows Server 2012 R2 Standard",
-                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2000.8 (X64) \n\tFeb 20 2014 20:04:26 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 9600: )\n",
+                "WindowsOS": "Windows Server 2019 Standard",
+                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 17763: )\n",
                 "DownloadSpeed": null,
                 "UploadSpeed": null,
                 "NrOfCosmix": null,
@@ -1074,7 +1074,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 7008.25
+                "SqlDatabaseSizeInMB": 7690.69
             },
             {
                 "LceMovexCode": "00301046",
@@ -1100,7 +1100,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 14591
+                "SqlDatabaseSizeInMB": 14531.25
             },
             {
                 "LceMovexCode": "00301046",
@@ -1168,8 +1168,8 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2019 Standard",
                 "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 17763: )\n",
-                "DownloadSpeed": 3.86,
-                "UploadSpeed": 0.32,
+                "DownloadSpeed": null,
+                "UploadSpeed": null,
                 "NrOfCosmix": 0,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
@@ -1178,7 +1178,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 14638.94
+                "SqlDatabaseSizeInMB": 16369.5
             },
             {
                 "LceMovexCode": "00301046",
@@ -1218,8 +1218,8 @@ var dataForTable =  [
                 "RobotAvg": 6.5,
                 "RobotSum": 379,
                 "LicenseType": "Farm",
-                "WindowsOS": "Windows 7 Ultimate",
-                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
+                "WindowsOS": "Windows 10 Pro",
+                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.3 <X64> (Build 19042: )\n",
                 "DownloadSpeed": null,
                 "UploadSpeed": null,
                 "NrOfCosmix": null,
@@ -1230,7 +1230,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 3554.25
+                "SqlDatabaseSizeInMB": 3558
             },
             {
                 "LceMovexCode": "00301046",
@@ -1256,7 +1256,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 20975.5
+                "SqlDatabaseSizeInMB": 21147
             },
             {
                 "LceMovexCode": "00301046",
@@ -1334,7 +1334,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 2511.19
+                "SqlDatabaseSizeInMB": 2749.31
             },
             {
                 "LceMovexCode": "00301046",
@@ -1360,14 +1360,14 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 3300.69
+                "SqlDatabaseSizeInMB": 3292
             },
             {
                 "LceMovexCode": "00301046",
                 "LceName": "Lely Center Biocom Technology Ltd.",
                 "sfdfarmlicense": "BFRWY-372H9-QLG62-RSGPG-M3EUM",
                 "sfdcustomermovexcode": "0730000051",
-                "sfdcurrentversion": "3.12.8.2",
+                "sfdcurrentversion": "3.12.32.2",
                 "sfdnrrobots": 2,
                 "sfdfarmname": "OAO \"Gluboskij Molochnokonservnyj Ko",
                 "sfdregion": "Belarus",
@@ -1386,7 +1386,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 3407.25
+                "SqlDatabaseSizeInMB": 3480.75
             },
             {
                 "LceMovexCode": "00301046",
@@ -1402,7 +1402,7 @@ var dataForTable =  [
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows 7 Ultimate",
                 "SqlDB": "Microsoft SQL Server 2014 - 12.0.2000.8 (X64) \n\tFeb 20 2014 20:04:26 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.1 <X64> (Build 7601: Service Pack 1)\n",
-                "DownloadSpeed": 3.29,
+                "DownloadSpeed": 2.49,
                 "UploadSpeed": 0.48,
                 "NrOfCosmix": 0,
                 "NrOfGrazeway": null,
@@ -1412,7 +1412,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 3116.69
+                "SqlDatabaseSizeInMB": 3245.63
             },
             {
                 "LceMovexCode": "00301046",
@@ -1438,7 +1438,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 11952.69
+                "SqlDatabaseSizeInMB": 12964.31
             },
             {
                 "LceMovexCode": "00301046",
@@ -1479,7 +1479,7 @@ var dataForTable =  [
                 "RobotSum": 379,
                 "LicenseType": "Farm",
                 "WindowsOS": "Windows Server 2016 Standard",
-                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 14393: )\n",
+                "SqlDB": "Microsoft SQL Server 2014 - 12.0.2000.8 (X64) \n\tFeb 20 2014 20:04:26 \n\tCopyright (c) Microsoft Corporation\n\tStandard Edition (64-bit) on Windows NT 6.3 <X64> (Build 14393: )\n",
                 "DownloadSpeed": null,
                 "UploadSpeed": null,
                 "NrOfCosmix": 0,
@@ -1490,7 +1490,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 19518.31
+                "SqlDatabaseSizeInMB": 18963.75
             },
             {
                 "LceMovexCode": "00301046",
@@ -1516,7 +1516,7 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": false,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 10526.69
+                "SqlDatabaseSizeInMB": 10582.06
             },
             {
                 "LceMovexCode": "00301046",
@@ -1534,7 +1534,7 @@ var dataForTable =  [
                 "SqlDB": "Microsoft SQL Server 2014 - 12.0.2269.0 (X64) \n\tJun 10 2015 03:35:45 \n\tCopyright (c) Microsoft Corporation\n\tExpress Edition (64-bit) on Windows NT 6.3 <X64> (Build 17763: )\n",
                 "DownloadSpeed": null,
                 "UploadSpeed": null,
-                "NrOfCosmix": 6,
+                "NrOfCosmix": 2,
                 "NrOfGrazeway": null,
                 "HaveVector": false,
                 "HaveQwesLD": false,
@@ -1542,6 +1542,6 @@ var dataForTable =  [
                 "HaveQwesISOLDReceiver": true,
                 "HaveQwesLDN": false,
                 "UseInherd": false,
-                "SqlDatabaseSizeInMB": 907.38
+                "SqlDatabaseSizeInMB": 1299.63
             }
         ]
